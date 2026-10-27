@@ -1,101 +1,899 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Advocate Vaishali K. Jadhav</title>
+  <title>Advocate Vaishali K. Jadhav | Advocate & Arbitrator | Pune & Bombay High Court</title>
+  <meta name="description" content="Official portfolio of Advocate Vaishali K. Jadhav - Ph.D. Scholar, Ranked No. 1 Mediator (NALSA/SAMA/World Bank), Certified POSH & DPDPA Consultant practicing across Pune District Court & Bombay High Court.">
+  
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            legal: {
+              950: '#070c18',
+              900: '#0f172a',
+              800: '#1e293b',
+              700: '#334155',
+              600: '#475569',
+              gold: '#c59b27',
+              goldhover: '#b0881e',
+              goldlight: '#fcf8eb',
+              goldborder: '#e6c875',
+            }
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #c59b27;
+      border-radius: 4px;
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #fef08a 0%, #c59b27 50%, #92400e 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <!-- Header -->
-  <header class="bg-indigo-900 text-white text-center py-8 shadow-md">
-    <h1 class="text-3xl font-bold">Advocate Vaishali Jadhav</h1>
-    <p class="mt-2">Top Mediator Award (2022) by SAMA, NALSA for resolving highest number of dispute in National Lok Adalat,Maharashtra</p>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-legal-gold selection:text-white">
+
+  <!-- BAR COUNCIL OF INDIA DISCLAIMER POPUP MODAL -->
+  <div id="disclaimerModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md transition-opacity duration-300">
+    <div class="bg-legal-900 border border-legal-gold/40 max-w-2xl w-full rounded-2xl p-6 sm:p-8 shadow-2xl text-white space-y-5 relative">
+      <div class="flex items-center gap-3 border-b border-slate-800 pb-4">
+        <div class="p-2.5 bg-legal-gold/20 text-legal-gold rounded-lg">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div>
+          <h3 class="text-xl font-serif font-bold text-white">Bar Council of India Disclaimer</h3>
+          <p class="text-xs text-legal-gold uppercase font-medium tracking-wider">Statutory Compliance Notice</p>
+        </div>
+      </div>
+
+      <div class="text-xs sm:text-sm text-slate-300 space-y-3 leading-relaxed max-h-60 overflow-y-auto pr-2">
+        <p>
+          As per the rules of the Bar Council of India, advocates and legal practitioners are strictly prohibited from soliciting work, advertising, or marketing their legal services in any manner.
+        </p>
+        <p>
+          By clicking <strong>"I AGREE & ENTER"</strong> below, the user explicitly acknowledges and accepts the following terms:
+        </p>
+        <ul class="list-disc pl-5 space-y-1.5 text-slate-400">
+          <li>The user is seeking information about Advocate Vaishali K. Jadhav voluntarily for their own knowledge and use.</li>
+          <li>There has been no advertisement, personal communication, solicitation, or invitation of any kind from the Advocate.</li>
+          <li>Information provided on this website does not constitute legal advice or establish an advocate-client relationship.</li>
+          <li>Advocate Vaishali K. Jadhav is not liable for any consequence of action taken based on content on this site.</li>
+        </ul>
+      </div>
+
+      <div class="pt-2 flex flex-col sm:flex-row gap-3 justify-end border-t border-slate-800">
+        <button onclick="acceptDisclaimer()" class="w-full sm:w-auto px-8 py-3 bg-legal-gold hover:bg-amber-400 text-legal-950 font-bold text-xs uppercase tracking-wider rounded-lg shadow-lg transition-all">
+          I Agree & Enter Website
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-legal-950 text-slate-300 text-xs py-2 px-4 border-b border-legal-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span class="truncate">Practicing Advocate – Pune District & Sessions Court | High Court of Judicature at Bombay</span>
+      </div>
+      
+      <!-- Contact links WITHOUT raw phone number text -->
+      <div class="flex flex-wrap items-center justify-center gap-4 text-slate-400 text-[11px]">
+        <a href="https://wa.me/918888039994?text=Hello%20Advocate%20Vaishali%20Jadhav,%20I%20would%20like%20to%20inquire%20about%20legal%20consultation." target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition-colors flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 fill-current text-emerald-500" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <a href="https://www.linkedin.com/in/adv-vaishali-jadhav-14320a8" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors flex items-center gap-1">
+          <svg class="w-3.5 h-3.5 fill-current text-blue-400" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <span class="hidden sm:inline text-slate-700">|</span>
+        <a href="mailto:adv.vaishalikjadhav@gmail.com" class="hover:text-legal-gold transition-colors flex items-center gap-1">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <span>adv.vaishalikjadhav@gmail.com</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION HEADER WITH OVERLAP PREVENTION -->
+  <header class="sticky top-0 z-40 bg-legal-900/95 backdrop-blur-md text-white border-b border-slate-800 shadow-xl">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 gap-4">
+        
+        <!-- Logo / Brand Title -->
+        <a href="#" class="flex items-center gap-3 group flex-shrink-0">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-to-br from-legal-gold to-amber-700 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-300">
+            <svg class="w-6 h-6 sm:w-7 sm:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 6l9-4 9 4M3 6v14a2 2 0 002 2h14a2 2 0 002-2V6M3 6l9 6 9-6M12 12v9m-4-9h8"/>
+            </svg>
+          </div>
+          <div>
+            <span class="block text-base sm:text-xl font-serif font-bold tracking-wide text-white group-hover:text-legal-gold transition-colors">
+              ADV. VAISHALI K. JADHAV
+            </span>
+            <span class="block text-[10px] sm:text-xs font-sans text-legal-gold tracking-wider uppercase font-medium">
+              Advocate & Arbitrator | Certified POSH & DPDPA Consultant
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation (Responsive spacing to prevent overlap) -->
+        <nav class="hidden lg:flex items-center space-x-5 xl:space-x-7 text-xs xl:text-sm font-medium">
+          <a href="#about" class="text-slate-300 hover:text-legal-gold transition-colors whitespace-nowrap">About</a>
+          <a href="#roles" class="text-slate-300 hover:text-legal-gold transition-colors whitespace-nowrap">Advisory & Roles</a>
+          <a href="#practice-areas" class="text-slate-300 hover:text-legal-gold transition-colors whitespace-nowrap">Practice Areas</a>
+          <a href="#it-experience" class="text-slate-300 hover:text-legal-gold transition-colors whitespace-nowrap">IT Leadership</a>
+          <a href="#credentials" class="text-slate-300 hover:text-legal-gold transition-colors whitespace-nowrap">Qualifications</a>
+          <a href="#awards" class="text-slate-300 hover:text-legal-gold transition-colors whitespace-nowrap">Honors & Keynotes</a>
+          <a href="#contact" class="text-slate-300 hover:text-legal-gold transition-colors whitespace-nowrap">Contact</a>
+        </nav>
+
+        <!-- CTA Button -->
+        <div class="hidden sm:flex items-center flex-shrink-0">
+          <a href="https://wa.me/918888039994?text=Hello%20Advocate%20Vaishali%20Jadhav,%20I%20would%20like%20to%20schedule%20a%20consultation." target="_blank" rel="noopener noreferrer" class="relative inline-flex items-center justify-center px-4 py-2.5 text-xs font-semibold tracking-wider text-slate-950 uppercase transition-all duration-300 bg-legal-gold rounded-md shadow-md hover:bg-amber-400 focus:outline-none whitespace-nowrap">
+            CONNECT VIA WHATSAPP
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="lg:hidden flex items-center">
+          <button id="mobile-menu-btn" type="button" class="text-slate-300 hover:text-white focus:outline-none p-2" aria-label="Toggle menu">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-legal-950 border-b border-legal-800 px-4 pt-2 pb-6 space-y-2 text-sm">
+      <a href="#about" class="block text-slate-300 hover:text-legal-gold py-2 border-b border-slate-800">About</a>
+      <a href="#roles" class="block text-slate-300 hover:text-legal-gold py-2 border-b border-slate-800">Advisory & Public Roles</a>
+      <a href="#practice-areas" class="block text-slate-300 hover:text-legal-gold py-2 border-b border-slate-800">Practice Areas</a>
+      <a href="#it-experience" class="block text-slate-300 hover:text-legal-gold py-2 border-b border-slate-800">13+ Yrs IT Leadership</a>
+      <a href="#credentials" class="block text-slate-300 hover:text-legal-gold py-2 border-b border-slate-800">Qualifications & Degrees</a>
+      <a href="#awards" class="block text-slate-300 hover:text-legal-gold py-2 border-b border-slate-800">Honors & Keynotes</a>
+      <a href="#contact" class="block text-slate-300 hover:text-legal-gold py-2">Contact Office</a>
+      <a href="https://wa.me/918888039994?text=Hello%20Advocate%20Vaishali%20Jadhav,%20I%20would%20like%20to%20schedule%20a%20consultation." target="_blank" rel="noopener noreferrer" class="block text-center mt-4 w-full py-3 bg-emerald-600 text-white font-bold uppercase text-xs rounded">
+        CONNECT VIA WHATSAPP
+      </a>
+    </div>
   </header>
 
-  <!-- Main Content -->
-  <main class="max-w-4xl mx-auto px-6 py-10 space-y-8">
+  <main>
+    <!-- HERO SECTION -->
+    <section class="relative bg-legal-900 text-white overflow-hidden pt-10 pb-20 lg:py-24">
+      <div class="absolute inset-0 opacity-20 pointer-events-none">
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-amber-500 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-10 w-80 h-80 bg-blue-600 rounded-full blur-3xl"></div>
+      </div>
 
-    <!-- About -->
-    <section>
-      <h2 class="text-2xl font-semibold text-indigo-900 border-b pb-2 mb-4">About</h2>
-      <p class="leading-relaxed">A multi-disciplinary legal professional with comprehensive experience in civil, criminal, family, consumer, cyber law and arbitrator</p>
-    </section>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- DYNAMIC LIVE STATUS TICKER -->
+        <div class="mb-8 max-w-3xl bg-legal-950/90 border border-legal-gold/30 rounded-xl p-3 px-4 shadow-lg flex items-center justify-between gap-4 text-xs">
+          <div class="flex items-center gap-3 overflow-hidden">
+            <span class="flex h-2.5 w-2.5 relative flex-shrink-0">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+            </span>
+            <div id="liveTickerText" class="text-slate-300 truncate font-mono tracking-tight transition-opacity duration-500">
+              🤝 Awarded No. 1 Mediator in Maharashtra by SAMA, NALSA & World Bank
+            </div>
+          </div>
+          <span class="text-[10px] text-legal-gold uppercase font-semibold bg-legal-900 px-2 py-1 rounded border border-legal-gold/20 flex-shrink-0">LIVE STATUS</span>
+        </div>
 
-    <!-- Education -->
-    <section>
-      <h2 class="text-2xl font-semibold text-indigo-900 border-b pb-2 mb-4">Education</h2>
-      <ul class="list-disc pl-6 space-y-2">
-        <li>LL.M. – International Law, Pune University</li>
-        <li>LL.B. – Land Law, Pune University</li>
-        <li>MBA (IT) – Pune University</li>
-        <li>MBA (Finance) – Pune University</li>
-        <li>Diploma in Cyberlaw – Pune University</li>
-        <li>A+ Grade in National Training Programme on Criminology and Forensic Science (Symbiosys, Hyderabad)</li>
-        <li>'Outstanding' Grade in Diploma in Drafting, Pleading & Conveyancing</li>
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <div class="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-medium">
+              <svg class="w-4 h-4 text-amber-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+              <span>Ph.D. Scholar (Law) • Certified POSH & DPDPA Trainer</span>
+            </div>
 
-      
-      </ul>
-    </section>
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold tracking-tight text-white leading-tight">
+              Strategic Legal Advisory.<br>
+              <span class="gold-gradient-text">Techno-Legal Expertise.</span>
+            </h1>
 
-    <!-- Practice Areas -->
-    <section>
-      <h2 class="text-2xl font-semibold text-indigo-900 border-b pb-2 mb-4">Practice Areas</h2>
-      <div class="grid grid-cols-2 gap-4">
-        <div class="bg-white p-4 rounded-lg shadow">Civil Law</div>
-        <div class="bg-white p-4 rounded-lg shadow">Family Law</div>
-        <div class="bg-white p-4 rounded-lg shadow">Criminal Law</div>
-        <div class="bg-white p-4 rounded-lg shadow">Corporate & Commercial Law</div>
-        <div class="bg-white p-4 rounded-lg shadow">Arbitration & Dispute Resolution</div>
-        <div class="bg-white p-4 rounded-lg shadow">Property & Real Estate Matters</div>
+            <p class="text-base sm:text-lg text-slate-300 max-w-2xl font-light leading-relaxed mx-auto lg:mx-0">
+              Practicing Advocate across <strong>Pune District Court & Bombay High Court</strong>. Combining Law, 
+              International Law, 13+ years of Corporate IT Leadership, and Cyber Security certifications to deliver 
+              unmatched counsel in Civil, Family, Cyber Law, POSH, DPDPA Act 2023, and Arbitration.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+              <a href="https://wa.me/918888039994?text=Hello%20Advocate%20Vaishali%20Jadhav,%20I%20would%20like%20to%20request%20a%20legal%20consultation." target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-legal-gold hover:bg-amber-400 text-legal-950 font-bold rounded-lg shadow-lg hover:shadow-amber-500/20 transition-all text-sm tracking-wide text-center uppercase">
+                WhatsApp Consultation
+              </a>
+              <a href="#practice-areas" class="px-8 py-3.5 bg-legal-800 hover:bg-slate-700 text-white font-medium rounded-lg border border-slate-700 transition-all text-sm text-center">
+                Explore Practice Areas
+              </a>
+            </div>
+
+            <div class="pt-8 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-3 gap-4 text-center lg:text-left">
+              <div>
+                <span class="block text-xl font-serif font-bold text-legal-gold">High Court</span>
+                <span class="text-[11px] text-slate-400 uppercase tracking-wider">Bombay HC & District Courts</span>
+              </div>
+              <div>
+                <span class="block text-xl font-serif font-bold text-legal-gold">#1 Mediator</span>
+                <span class="text-[11px] text-slate-400 uppercase tracking-wider">SAMA & NALSA Awardee</span>
+              </div>
+              <div class="col-span-2 sm:col-span-1">
+                <span class="block text-xl font-serif font-bold text-legal-gold">13+ Yrs IT Exp</span>
+                <span class="text-[11px] text-slate-400 uppercase tracking-wider">Tech & Cyber Law Specialist</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Highlight Card -->
+          <div class="lg:col-span-5">
+            <div class="relative bg-gradient-to-b from-legal-800 to-legal-950 p-7 sm:p-8 rounded-2xl border border-legal-gold/30 shadow-2xl">
+              <div class="relative z-10 space-y-5">
+                
+                <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                  <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-full bg-legal-gold/20 border border-legal-gold flex items-center justify-center text-legal-gold">
+                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <div>
+                      <span class="text-[11px] font-semibold text-legal-gold uppercase tracking-widest block">Recognized Excellence</span>
+                      <h3 class="text-lg font-serif font-bold text-white">Ranked No. 1 Mediator</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="text-xs sm:text-sm text-slate-300 font-light leading-relaxed">
+                  Conferred with the <strong>Rank No. 1 Mediator in Maharashtra (2022)</strong> by <strong>SAMA</strong> in collaboration with the <strong>National Legal Services Authority (NALSA)</strong> and the <strong>World Bank</strong> for maximum dispute settlements.
+                </p>
+
+                <div class="bg-legal-900/90 p-3.5 rounded-lg border border-slate-700/80 space-y-2 text-xs text-slate-300">
+                  <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4 text-legal-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                    <span>Legal Advisor – Yerwada Mental Hospital (2024–Present)</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4 text-legal-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                    <span>Legal Advisor – Chandan Nagar Police Station, Pune</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4 text-legal-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                    <span>DPDPA Act 2023 & POSH IC Capacity Trainer</span>
+                  </div>
+                </div>
+
+                <div class="pt-2 text-center lg:text-left">
+                  <a href="https://wa.me/918888039994?text=Hello%20Advocate%20Vaishali%20Jadhav,%20I%20would%20like%20to%20connect%20regarding%20legal%20representation." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-legal-gold hover:underline uppercase tracking-wider">
+                    <span>Direct WhatsApp Inquiry</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
-    <!-- Professional Experience -->
-    <section>
-      <h2 class="text-2xl font-semibold text-indigo-900 border-b pb-2 mb-4">Professional Experience</h2>
-      <ul class="list-disc pl-6 space-y-2">
-       <li>Practicing Advocate – Pune District Court & High Court, Mumbai</li>
-       <li>Active Member, Ahilya Cell, Pune City</li>
-       <li>Panel Advocate, District Legal Service Authority, Pune City</li>
-      </ul>
-    </section>
+    <!-- ADVISORY & PUBLIC ROLES SECTION -->
+    <section id="roles" class="py-16 bg-slate-100 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-xs font-bold text-legal-gold uppercase tracking-widest">Institutional Advisory</span>
+          <h2 class="text-3xl font-serif font-bold text-legal-900 mt-1">Institutional Advisory & Key Public Roles</h2>
+        </div>
 
-    
-    <!-- Awards -->
-    <section>
-      <h2 class="text-2xl font-semibold text-indigo-900 border-b pb-2 mb-4">Awards & Recognition</h2>
-      <ul class="list-disc pl-6 space-y-2">
-        <li>Top Mediator Award by SAMA, NALSA for resolving highest number of disputes in National Lok Adalat, Maharashtra, 2022</li>
-        <li>Notable Alumna by Shri Navalmal Firodia Law College, Pune for distinguised contribution to legal profession</li>
-        <li><p>Guest Speaker at <br>
-          &nbsp;&nbsp;&nbsp;- Sinhgad College of Engineering,<br>
-          &nbsp;&nbsp;&nbsp;- Bharati Vidyapeeth's College of Engineering for Women, Pune<br>
-          &nbsp;&nbsp;&nbsp;- District Legal Services Authority(Pune) and NALSA Events<br>
-          &nbsp;&nbsp;&nbsp;- Sadhu Vasvani Institute of Management Studies, Pune<br>
-          &nbsp;&nbsp;&nbsp;- Arham Law College Pune<br>
-          &nbsp;&nbsp;&nbsp;- Symbiosys Law School, Pune<br>
-          &nbsp;&nbsp;&nbsp;- Lawyer's Development Forum, Pune<br>
-          &nbsp;&nbsp;&nbsp;- The John Deere Technology Center, Pune</p>
-           &nbsp;&nbsp;&nbsp;-  Center, Pune</p>
-      </ul>
-    </section>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+            <div class="p-3 bg-legal-goldlight border border-legal-goldborder text-legal-gold rounded-lg inline-block mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0h4m-4 0V11m0 0V5m0 6h4"/></svg>
+            </div>
+            <h3 class="font-bold text-legal-900 text-base">Legal Advisor – Yerwada Mental Hospital</h3>
+            <p class="text-xs text-slate-500 mt-1 font-semibold">2024 – Till Date</p>
+            <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+              Providing legal guidance, statutory compliance under the Mental Healthcare Act, and serving as Panel Advocate safeguarding legal rights and entitlements of inmates.
+            </p>
+          </div>
 
-    <!-- Contact -->
-    <section>
-      <h2 class="text-2xl font-semibold text-indigo-900 border-b pb-2 mb-4">Contact</h2>
-      <div class="bg-white p-6 rounded-lg shadow space-y-2">
-        <p><strong>Office Address:</strong> Office - 1, Sahyadri,Talera Nagar, Vadgoansheri, Pune, Maharashtra</p>
-        <p><strong>Mobile:</strong> +91-8888039994</p>
-        <p><strong>Email:</strong> adv.vaishalijadhav@gmail.com</p>
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+            <div class="p-3 bg-legal-goldlight border border-legal-goldborder text-legal-gold rounded-lg inline-block mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 class="font-bold text-legal-900 text-base">Legal Advisor – Chandan Nagar Police Station</h3>
+            <p class="text-xs text-slate-500 mt-1 font-semibold">Law Enforcement Trainer</p>
+            <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+              Advising on procedural and substantive legal issues, delivering legal awareness programs for police personnel to enhance operational effectiveness.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+            <div class="p-3 bg-legal-goldlight border border-legal-goldborder text-legal-gold rounded-lg inline-block mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+            </div>
+            <h3 class="font-bold text-legal-900 text-base">DPDPA 2023 & POSH IC Trainer</h3>
+            <p class="text-xs text-slate-500 mt-1 font-semibold">Corporate & Institutional Consultant</p>
+            <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+              Conducting capacity building programs for Internal Committees under POSH Act and training corporate bodies on Digital Personal Data Protection Act compliance.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-5 relative">
+            <div class="relative rounded-2xl bg-legal-900 p-8 text-white shadow-xl overflow-hidden border-t-4 border-legal-gold">
+              <span class="text-xs uppercase font-semibold text-legal-gold tracking-widest block mb-2">Legal Philosophy</span>
+              <blockquote class="font-serif text-2xl italic text-slate-100 leading-snug">
+                "Effective legal practice bridges deep statutory knowledge with technical insight, providing swift mediation and resolute courtroom advocacy."
+              </blockquote>
+              <div class="mt-6 pt-6 border-t border-slate-800 flex items-center justify-between">
+                <div>
+                  <h4 class="font-serif font-bold text-lg text-white">Adv. Vaishali K. Jadhav</h4>
+                  <p class="text-xs text-slate-400">Advocate, Arbitrator & Ph.D. Scholar</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 space-y-6">
+            <div>
+              <span class="text-xs font-bold text-legal-gold uppercase tracking-widest">About Advocate Vaishali K. Jadhav</span>
+              <h2 class="text-3xl sm:text-4xl font-serif font-bold text-legal-900 mt-2">
+                A Multi-Disciplinary Counsel & Legal Educator
+              </h2>
+            </div>
+
+            <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+              Advocate Vaishali K. Jadhav is a practicing Advocate at the Pune District Court and Bombay High Court with substantial litigation experience across <strong>MACT, Civil, Revenue, Criminal, Family, Consumer, Trust, Society, Cyber Law, and Land Laws</strong>.
+            </p>
+
+            <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+              She holds an <strong>LL.M. in International Law</strong>, <strong>LL.B. in Land Laws</strong>, <strong>B.E. in Computer Engineering</strong>, <strong>Dual MBA in IT & Finance</strong>, and is currently pursuing her <strong>Ph.D. in Law</strong> at Savitribai Phule Pune University. Additionally, she brings <strong>13+ years of IT Project Management experience</strong> with global MNCs including Tech Mahindra, AT&T, and Schlumberger.
+            </p>
+
+            <div class="grid sm:grid-cols-2 gap-4 pt-2">
+              <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+                <h4 class="font-semibold text-legal-900 text-sm flex items-center gap-2">
+                  <svg class="w-4 h-4 text-legal-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  ADR & Lok Adalat Pioneer
+                </h4>
+                <p class="text-xs text-slate-500 mt-1">Associated with SAMA and DLSA Pune with an exceptional settlement record.</p>
+              </div>
+
+              <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+                <h4 class="font-semibold text-legal-900 text-sm flex items-center gap-2">
+                  <svg class="w-4 h-4 text-legal-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  Techno-Legal Trainer
+                </h4>
+                <p class="text-xs text-slate-500 mt-1">Resource person for DPDPA 2023, IT Act, Cyber Safety & Forensic evidence.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PRACTICE AREAS SECTION -->
+    <section id="practice-areas" class="py-20 bg-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold text-legal-gold uppercase tracking-widest">Legal Portfolio</span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-legal-900 mt-2">Core Practice Areas & Specializations</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <div class="bg-white p-7 rounded-xl border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+            <h3 class="text-lg font-serif font-bold text-legal-900">Civil, Revenue & Land Law</h3>
+            <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+              Civil litigation, revenue appeals, property title searches, land laws, partition suits, and conveyancing.
+            </p>
+          </div>
+
+          <div class="bg-white p-7 rounded-xl border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+            <h3 class="text-lg font-serif font-bold text-legal-900">Family & Matrimonial Counseling</h3>
+            <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+              Divorce proceedings, child custody, domestic violence (DV Act), family mediation, and maintenance.
+            </p>
+          </div>
+
+          <div class="bg-white p-7 rounded-xl border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+            <h3 class="text-lg font-serif font-bold text-legal-900">Cyber Law & DPDPA 2023</h3>
+            <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+              IT Act compliance, digital personal data protection, electronic evidence, and cybercrime defense.
+            </p>
+          </div>
+
+          <div class="bg-white p-7 rounded-xl border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+            <h3 class="text-lg font-serif font-bold text-legal-900">POSH Act & Workplace Safety</h3>
+            <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+              Certified POSH Trainer, Internal Committee (IC) capacity building, gender justice, and workplace compliance.
+            </p>
+          </div>
+
+          <div class="bg-white p-7 rounded-xl border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+            <h3 class="text-lg font-serif font-bold text-legal-900">MACT & Motor Accident Claims</h3>
+            <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+              Substantial experience in Motor Accident Claims Tribunal (MACT) cases and insurance compensation defense.
+            </p>
+          </div>
+
+          <div class="bg-white p-7 rounded-xl border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+            <h3 class="text-lg font-serif font-bold text-legal-900">Trusts, Societies & Corporate Law</h3>
+            <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+              Public trust registration, society legal matters, corporate contract drafting, and financial advisory.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- IT LEADERSHIP & EXPERIENCE -->
+    <section id="it-experience" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold text-legal-gold uppercase tracking-widest">Techno-Legal Advantage</span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-legal-900 mt-2">13+ Years Corporate IT Experience</h2>
+          <p class="text-slate-600 mt-2 text-xs sm:text-sm">
+            Proven corporate track record in Project Management, Software Development, DevOps, and Delivery Management across global MNCs.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+          <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 space-y-4">
+            <h3 class="text-xl font-serif font-bold text-legal-900">MNC & Government Projects Handled</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs font-medium text-slate-700">
+              <div class="p-3 bg-white rounded border border-slate-200 text-center">Tech Mahindra</div>
+              <div class="p-3 bg-white rounded border border-slate-200 text-center">AT&T</div>
+              <div class="p-3 bg-white rounded border border-slate-200 text-center">Schlumberger (SLB)</div>
+              <div class="p-3 bg-white rounded border border-slate-200 text-center">General Motors</div>
+              <div class="p-3 bg-white rounded border border-slate-200 text-center">Datamatics</div>
+              <div class="p-3 bg-white rounded border border-slate-200 text-center">Asian Paints</div>
+              <div class="p-3 bg-white rounded border border-slate-200 text-center">Amar Ujala</div>
+              <div class="p-3 bg-white rounded border border-slate-200 text-center">Delhi Govt DOIT</div>
+              <div class="p-3 bg-white rounded border border-slate-200 text-center">Prosoft Cyber World</div>
+            </div>
+          </div>
+
+          <div class="bg-legal-900 text-white p-8 rounded-2xl border border-legal-gold/30 space-y-4">
+            <h3 class="text-xl font-serif font-bold text-legal-gold">Technical & Cyber Certifications</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-legal-gold"></span>
+                <span>ITIL® Foundation Certified (2011)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-legal-gold"></span>
+                <span>Sun Certified Java Programmer (v5.0)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-legal-gold"></span>
+                <span>IBM WebSphere Developer (v6.0)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-legal-gold"></span>
+                <span>IBM WebSphere Admin (v6.0)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-legal-gold"></span>
+                <span>SAP B1 Certification (Delphi)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-legal-gold"></span>
+                <span>CISSP - CyberFrat Certified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ACADEMICS & QUALIFICATIONS -->
+    <section id="credentials" class="py-20 bg-slate-50 border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold text-legal-gold uppercase tracking-widest">Academic Excellence</span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-legal-900 mt-2">Qualifications & Degrees</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-xs">
+          
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+            <span class="px-2 py-0.5 bg-legal-900 text-legal-gold rounded font-semibold text-[10px]">Ph.D. Scholar</span>
+            <h4 class="font-bold text-legal-900 text-sm mt-2">Ph.D. Scholar (Law)</h4>
+            <p class="text-slate-500 mt-1">Savitribai Phule Pune University (SPPU)</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+            <span class="px-2 py-0.5 bg-legal-900 text-legal-gold rounded font-semibold text-[10px]">Master's Degree</span>
+            <h4 class="font-bold text-legal-900 text-sm mt-2">LL.M. – International Law</h4>
+            <p class="text-slate-500 mt-1">Savitribai Phule Pune University (SPPU)</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+            <span class="px-2 py-0.5 bg-legal-900 text-legal-gold rounded font-semibold text-[10px]">Bachelor of Laws</span>
+            <h4 class="font-bold text-legal-900 text-sm mt-2">LL.B. – Land Laws</h4>
+            <p class="text-slate-500 mt-1">Savitribai Phule Pune University (SPPU)</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+            <span class="px-2 py-0.5 bg-legal-900 text-legal-gold rounded font-semibold text-[10px]">Engineering Degree</span>
+            <h4 class="font-bold text-legal-900 text-sm mt-2">B.E. (Computer Engineering)</h4>
+            <p class="text-slate-500 mt-1">Engineering Graduate Degree</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+            <span class="px-2 py-0.5 bg-legal-900 text-legal-gold rounded font-semibold text-[10px]">Post Graduate</span>
+            <h4 class="font-bold text-legal-900 text-sm mt-2">MBA (IT) & MBA (Finance)</h4>
+            <p class="text-slate-500 mt-1">Dual MBA Specialization - SPPU</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+            <span class="px-2 py-0.5 bg-legal-900 text-legal-gold rounded font-semibold text-[10px]">PG Diploma</span>
+            <h4 class="font-bold text-legal-900 text-sm mt-2">Diploma in Cyber Laws</h4>
+            <p class="text-slate-500 mt-1">Savitribai Phule Pune University (SPPU)</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+            <span class="px-2 py-0.5 bg-legal-900 text-legal-gold rounded font-semibold text-[10px]">Commerce Degree</span>
+            <h4 class="font-bold text-legal-900 text-sm mt-2">B.Com. – Banking & Finance</h4>
+            <p class="text-slate-500 mt-1">Savitribai Phule Pune University (SPPU)</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+            <span class="px-2 py-0.5 bg-legal-900 text-legal-gold rounded font-semibold text-[10px]">Polytechnic</span>
+            <h4 class="font-bold text-legal-900 text-sm mt-2">Diploma in Computer Engg.</h4>
+            <p class="text-slate-500 mt-1">AISSMS Polytechnic, Pune</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HONORS & KEYNOTE LECTURES -->
+    <section id="awards" class="py-20 bg-legal-900 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold text-legal-gold uppercase tracking-widest">Recognitions & Contributions</span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mt-2">Awards & Keynote Speaking</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-16">
+          <div class="bg-legal-800/80 p-6 rounded-xl border border-legal-gold/30">
+            <h3 class="text-lg font-serif font-bold text-legal-gold">Ranked No. 1 Mediator (2022)</h3>
+            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+              Conferred by SAMA, NALSA & The World Bank for highest dispute resolutions in National Lok Adalat.
+            </p>
+          </div>
+
+          <div class="bg-legal-800/80 p-6 rounded-xl border border-legal-gold/30">
+            <h3 class="text-lg font-serif font-bold text-legal-gold">Agraganya Award (2023)</h3>
+            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+              Awarded by SkyVision Foundation for exemplary legal and social service to society.
+            </p>
+          </div>
+
+          <div class="bg-legal-800/80 p-6 rounded-xl border border-legal-gold/30">
+            <h3 class="text-lg font-serif font-bold text-legal-gold">Notable Alumna Award (2024)</h3>
+            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+              Conferred by DES Shri Navalmal Firodia Law College for outstanding contributions to the legal profession.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-legal-950 p-8 rounded-2xl border border-slate-800">
+          <h3 class="text-xl font-serif font-bold text-center text-white mb-6">Invited Guest Speaker & Resource Person</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 text-xs">
+            <div class="p-3 bg-legal-900 rounded border border-slate-800">Symbiosis Law School, Pune</div>
+            <div class="p-3 bg-legal-900 rounded border border-slate-800">District Legal Services Authority (DLSA)</div>
+            <div class="p-3 bg-legal-900 rounded border border-slate-800">National Legal Services Authority (NALSA)</div>
+            <div class="p-3 bg-legal-900 rounded border border-slate-800">Kailash Satyarthi Children's Foundation</div>
+            <div class="p-3 bg-legal-900 rounded border border-slate-800">John Deere Technology Center</div>
+            <div class="p-3 bg-legal-900 rounded border border-slate-800">Sinhgad College of Engineering</div>
+            <div class="p-3 bg-legal-900 rounded border border-slate-800">Bharati Vidyapeeth Engg. for Women</div>
+            <div class="p-3 bg-legal-900 rounded border border-slate-800">Sadhu Vaswani Institute of Management</div>
+            <div class="p-3 bg-legal-900 rounded border border-slate-800">SNBP Law College, Pune</div>
+            <div class="p-3 bg-legal-900 rounded border border-slate-800">Arham Law College</div>
+            <div class="p-3 bg-legal-900 rounded border border-slate-800">G. H. Raisoni International Skill Tech Univ</div>
+            <div class="p-3 bg-legal-900 rounded border border-slate-800">Digital Task Force, Pune</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (UPDATED: OFFICE & DUAL WHATSAPP+EMAIL SUBMISSION) -->
+    <section id="contact" class="py-20 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold text-legal-gold uppercase tracking-widest">Get In Touch</span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-legal-900 mt-2">Office & Consultation</h2>
+          <p class="text-slate-600 mt-2 text-sm">
+            Reach out for legal representation, DPDPA/POSH advisory, or arbitration appointments.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-12">
+          
+          <div class="lg:col-span-5 space-y-6">
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+              
+              <h3 class="text-xl font-serif font-bold text-legal-900 border-b pb-3 border-slate-100">Office Information</h3>
+
+              <div class="flex items-start gap-4">
+                <div class="p-3 bg-legal-goldlight text-legal-gold rounded-lg flex-shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-legal-900 text-sm">Office Address</h4>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                    Office No. 1, Sahyadri, Talera Nagar,<br>
+                    Vadgaon Sheri, Pune, Maharashtra – 411014
+                  </p>
+                </div>
+              </div>
+
+              <!-- EMBEDDED GOOGLE MAP COMPONENT -->
+              <div class="w-full h-48 rounded-xl overflow-hidden border border-slate-200 shadow-inner">
+                <iframe 
+                  title="Office Location Map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.5931346747535!2d73.9197!3d18.5534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c15c826c7e1b%3A0x6b1db9e5e771b9d0!2sTalera%20Nagar%2C%20Vadgaon%20Sheri%2C%20Pune%2C%20Maharashtra%20411014!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin" 
+                  width="100%" 
+                  height="100%" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+
+              <!-- WhatsApp Direct Link -->
+              <div class="flex items-start gap-4">
+                <div class="p-3 bg-emerald-50 text-emerald-600 rounded-lg flex-shrink-0">
+                  <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-legal-900 text-sm">WhatsApp Business</h4>
+                  <a href="https://wa.me/918888039994?text=Hello%20Advocate%20Vaishali%20Jadhav,%20I%20would%20like%20to%20inquire%20about%20legal%20consultation." target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-emerald-600 hover:underline mt-1 block">
+                    Connect on WhatsApp
+                  </a>
+                </div>
+              </div>
+
+              <!-- Email Direct Link -->
+              <div class="flex items-start gap-4">
+                <div class="p-3 bg-legal-goldlight text-legal-gold rounded-lg flex-shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-legal-900 text-sm">Email Address</h4>
+                  <a href="mailto:adv.vaishalikjadhav@gmail.com" class="text-xs font-semibold text-legal-gold hover:underline mt-1 block">
+                    adv.vaishalikjadhav@gmail.com
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- CONSULTATION FORM WITH AUTOMATIC DUAL EMAIL + WHATSAPP SUBMISSION -->
+          <div class="lg:col-span-7">
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+              <h3 class="text-xl font-serif font-bold text-legal-900 mb-2">Request Consultation Appointment</h3>
+              <p class="text-xs text-slate-500 mb-6">Submitting this form prepares your message for instant WhatsApp dispatch and Email confirmation.</p>
+
+              <form id="consultationForm" onsubmit="handleDualSubmit(event)" class="space-y-4">
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Full Name *</label>
+                    <input id="clientName" type="text" required placeholder="e.g. Rajesh Sharma" class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:border-legal-gold focus:bg-white">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Phone Number *</label>
+                    <input id="clientPhone" type="tel" required placeholder="+91 98765 43210" class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:border-legal-gold focus:bg-white">
+                  </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Email Address</label>
+                    <input id="clientEmail" type="email" placeholder="name@example.com" class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:border-legal-gold focus:bg-white">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Service Category</label>
+                    <select id="clientCategory" class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:border-legal-gold focus:bg-white text-slate-700">
+                      <option>Civil Dispute / Land Law</option>
+                      <option>Family Counsel & Mediation</option>
+                      <option>Cyber Law & Electronic Evidence</option>
+                      <option>DPDPA 2023 / Corporate Compliance</option>
+                      <option>POSH IC Training & Advisory</option>
+                      <option>MACT / Motor Accident Claim</option>
+                      <option>Arbitration & Conciliation</option>
+                      <option>Other Legal Matter</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Brief Description of Legal Matter *</label>
+                  <textarea id="clientDetails" rows="4" required placeholder="Please describe your legal query..." class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:border-legal-gold focus:bg-white"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3.5 bg-legal-900 hover:bg-legal-800 text-legal-gold font-bold text-xs uppercase tracking-wider rounded-lg shadow-md transition-all">
+                  Submit Request (WhatsApp & Email)
+                </button>
+                
+                <div id="formFeedback" class="hidden p-3.5 bg-emerald-100 text-emerald-900 text-xs rounded-lg text-center font-medium border border-emerald-300">
+                  ✅ Request generated successfully! Opening WhatsApp and preparing Email...
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-indigo-900 text-white text-center py-4 mt-10 text-sm">
-    ⚖️ This website provides general information only and does not constitute legal advice or solicitation.
+  <!-- BCI DISCLAIMER & FOOTER -->
+  <footer class="bg-legal-950 text-slate-400 text-xs border-t border-legal-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      
+      <div class="bg-legal-900/60 p-6 rounded-xl border border-slate-800 mb-8 space-y-2">
+        <h5 class="text-legal-gold font-semibold uppercase tracking-wider text-xs flex items-center gap-1.5">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/></svg>
+          Bar Council of India Statutory Compliance
+        </h5>
+        <p class="text-slate-400 text-[11px] leading-relaxed">
+          As per the rules of the Bar Council of India, advocates are not permitted to solicit work or advertise. 
+          By accessing this website, the user acknowledges that the information provided is solely for informational purposes 
+          at the user's voluntary request and does not create an advocate-client relationship or legal advice.
+        </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left pt-4 border-t border-slate-800">
+        <div>
+          <span class="text-white font-serif font-bold text-sm">Advocate Vaishali K. Jadhav</span>
+          <p class="text-[11px] text-slate-500">© 2026 All Rights Reserved | Practice in Pune & Bombay High Court</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-6 text-slate-400">
+          <a href="#about" class="hover:text-legal-gold transition-colors">About</a>
+          <a href="#roles" class="hover:text-legal-gold transition-colors">Advisory</a>
+          <a href="#practice-areas" class="hover:text-legal-gold transition-colors">Practice Areas</a>
+          <a href="#credentials" class="hover:text-legal-gold transition-colors">Qualifications</a>
+          <a href="#contact" class="hover:text-legal-gold transition-colors">Contact</a>
+        </div>
+      </div>
+
+    </div>
   </footer>
+
+  <script>
+    // Disclaimer Modal Handling
+    window.addEventListener('DOMContentLoaded', () => {
+      const modal = document.getElementById('disclaimerModal');
+      const isAccepted = localStorage.getItem('adv_disclaimer_accepted');
+      if (isAccepted === 'true') {
+        modal.classList.add('hidden');
+      }
+    });
+
+    function acceptDisclaimer() {
+      localStorage.setItem('adv_disclaimer_accepted', 'true');
+      document.getElementById('disclaimerModal').classList.add('hidden');
+    }
+
+    // Mobile Navigation Drawer Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Dynamic Live Status Ticker Rotator
+    const tickerMessages = [
+      "🤝 Ranked No. 1 Mediator in Maharashtra by SAMA, NALSA & World Bank",
+      "⚖️ Active Legal Advisor at Yerwada Mental Hospital & Panel Advocate",
+      "🏛️ Pune District Court & Bombay High Court Representation Active",
+      "🔒 Certified POSH & Digital Personal Data Protection Act (DPDPA 2023) Consultant"
+    ];
+    let currentTickerIndex = 0;
+    const tickerElement = document.getElementById('liveTickerText');
+    
+    if (tickerElement) {
+      setInterval(() => {
+        tickerElement.style.opacity = '0';
+        setTimeout(() => {
+          currentTickerIndex = (currentTickerIndex + 1) % tickerMessages.length;
+          tickerElement.textContent = tickerMessages[currentTickerIndex];
+          tickerElement.style.opacity = '1';
+        }, 300);
+      }, 4500);
+    }
+
+    // Dual Submission: Opens WhatsApp + Prepares Email
+    function handleDualSubmit(event) {
+      event.preventDefault();
+      
+      const name = document.getElementById('clientName').value;
+      const phone = document.getElementById('clientPhone').value;
+      const email = document.getElementById('clientEmail').value || 'N/A';
+      const category = document.getElementById('clientCategory').value;
+      const details = document.getElementById('clientDetails').value;
+
+      const feedback = document.getElementById('formFeedback');
+      feedback.classList.remove('hidden');
+
+      const textMessage = `*New Legal Consultation Inquiry*%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Email:* ${encodeURIComponent(email)}%0A*Category:* ${encodeURIComponent(category)}%0A*Details:* ${encodeURIComponent(details)}`;
+
+      // 1. Trigger WhatsApp URL in new tab/window
+      const whatsappUrl = `https://wa.me/918888039994?text=${textMessage}`;
+      window.open(whatsappUrl, '_blank');
+
+      // 2. Trigger Mailto URL for email draft to target advocate email
+      const mailtoSubject = encodeURIComponent(`Consultation Inquiry from ${name} [${category}]`);
+      const mailtoBody = encodeURIComponent(`Client Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nCategory: ${category}\n\nDetails:\n${details}`);
+      const mailtoUrl = `mailto:adv.vaishalikjadhav@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`;
+      
+      setTimeout(() => {
+        window.location.href = mailtoUrl;
+      }, 800);
+    }
+  </script>
 </body>
 </html>
